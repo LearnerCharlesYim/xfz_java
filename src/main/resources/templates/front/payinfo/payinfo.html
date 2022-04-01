@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org"
+      th:replace="~{front/component/base::base(~{::#title},~{::#head},~{::#main})}">
+<th:block id="title">
+    <title>小饭桌 | 付费咨询</title>
+</th:block>
+<th:block id="head">
+    <link rel="stylesheet" th:href="@{/css/front/payinfo.css}">
+</th:block>
+
+<th:block id="main">
+    <div class="main">
+        <div class="wrapper">
+            <div class="main-content-wrapper">
+                <div class="advertise-group">
+                    <a href="#">
+                        <img src="http://www.xfz.cn/static/build/images/web-venture-banner.png" alt="">
+                    </a>
+                </div>
+                <ul class="document-list">
+                    <li>
+                        <div class="category-group"
+                             style="background-image:url('http://xfz.cn/static/build/images/web-bp-pc.png');"></div>
+                        <div class="document-info">
+                            <p class="document-title">如何写好一份商业计划书</p>
+                            <p class="document-desc">一份好的商业计划书，是创业成功的开始！</p>
+                            <p class="document-price">￥8.8</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category-group"
+                             style="background-image:url('http://xfz.cn/static/build/images/web-bp-pc.png');"></div>
+                        <div class="document-info">
+                            <p class="document-title">如何写好一份商业计划书</p>
+                            <p class="document-desc">一份好的商业计划书，是创业成功的开始！</p>
+                            <p class="document-price">￥8.8</p>
+                        </div>
+                    </li>
+                    <li>
+                        <div class="category-group"
+                             style="background-image:url('http://xfz.cn/static/build/images/web-bp-pc.png');"></div>
+                        <div class="document-info">
+                            <p class="document-title">如何写好一份商业计划书</p>
+                            <p class="document-desc">一份好的商业计划书，是创业成功的开始！</p>
+                            <p class="document-price">￥8.8</p>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+            <div th:replace="~{front/component/sidebar::sidebar}"></div>
+        </div>
+    </div>
+</th:block>
+</html>
